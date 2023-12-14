@@ -41,13 +41,13 @@ services:
       - HOST=0.0.0.0
 
   #Test Application
-  web-app:
-    image: docker-node-express-mongoreplicaset-app
-    build: ./web-site
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./web-site:/usr/src/app
-      - /usr/src/app/node_modules
-    depends_on:
-      - "setup-rs"
+  # web-app:
+  #   image: docker-node-express-mongoreplicaset-app
+  #   build: ./web-site
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./web-site:/usr/src/app
+  #     - /usr/src/app/node_modules
+  #   depends_on:
+  #     - "setup-rs"
